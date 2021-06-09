@@ -38,6 +38,13 @@ function Next(props) {
     <p>До встречи на занятиях!</p>
   )
 }
+
+let End = props => {
+  return (
+    <h3>228</h3>
+  )
+}
+
 function App() {
   return (
     <div className="App">
@@ -48,6 +55,7 @@ function App() {
         <Hello isVisible/>
         <Content isVisible />
         <Next />
+        <End />
       </header>
     </div>
   );
