@@ -38,11 +38,12 @@ function Next(props) {
     <p>До встречи на занятиях!</p>
   )
 }
-
 let End = props => {
-  return (
-    <h3>228</h3>
-  )
+  if (props.chetko === true) {
+    return <p>Красавчик</p>
+  } else {
+    return <p>Не Красавчик</p>
+  }
 }
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
         <Hello isVisible/>
         <Content isVisible />
         <Next />
-        <End />
+        <End chetko/>
       </header>
     </div>
   );
