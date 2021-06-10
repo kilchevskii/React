@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Mycomp firstName = 'Vlad' lastName = 'Kilchevskii' age = {22} exp/>
+        <Mycomp firstName = 'Vlad' lastName = 'Kilchevskii' age = {22} exp education = 'ReDev'/>
 
 
       </header>
