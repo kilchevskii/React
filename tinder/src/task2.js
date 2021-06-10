@@ -7,8 +7,7 @@ const Mycomp = (props) => {
         skills : "HTML, CSS, JS, React"
     }
     let getExp = (exp) => {
-    let experience = true;
-    if (experience && props.exp) {
+    if (props.exp) {
         return <p>Есть опыт коммерческой разработки</p>
     } else {
         return <p>Нет опыта коммерческой разработки</p>
