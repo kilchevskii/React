@@ -1,5 +1,6 @@
 import React from 'react';
-const Mycomp = (props) => {
+const Mycomp = ({firstName, lastName, age, education, exp}) => {
+    // let {firstName, lastName} = 
     function getEduc (education) {
         return education
     }
@@ -7,7 +8,7 @@ const Mycomp = (props) => {
         skills : "HTML, CSS, JS, React"
     }
     let getExp = (exp) => {
-    if (props.exp) {
+    if (exp) {
         return <p>Есть опыт коммерческой разработки</p>
     } else {
         return <p>Нет опыта коммерческой разработки</p>
@@ -15,10 +16,10 @@ const Mycomp = (props) => {
 }
     return (
         <div>
-            <p>Привет, мое имя {props.firstName} {props.lastName}</p>
-            <p>Мне {props.age} года</p>
-            <p>Обучался в {getEduc(props.education)}</p>
-            <p>{getExp(props.exp)}</p>
+            <p>Привет, мое имя {firstName} {lastName}</p>
+            <p>Мне {age} года</p>
+            <p>Обучался в {getEduc(education)}</p>
+            <p>{getExp(exp)}</p>
             <p>Мои скиллы {obj.skills}</p>
         </div>
     )
