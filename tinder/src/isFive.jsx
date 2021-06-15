@@ -1,15 +1,7 @@
-  
 import React, { useMemo } from 'react';
 
 let renderCount = 0;
 
-// (prevProps, nextPropx) => {
-//     if (nextPropx.value === 5) {
-//       return false;
-//     } else {
-//       return true;
-//     }
-//   }
 export default React.memo(function IsFive({ value }) {
     console.warn(`🔴 isFive render: ${++renderCount}`);
 
@@ -21,7 +13,6 @@ export default React.memo(function IsFive({ value }) {
     return (
         <h3>{getResult}</h3>
     )
-    // return <h3>{getResult}</h3>;
   }, (prevProps, nextProps) => {
       if(nextProps.value === 5) {
           return false

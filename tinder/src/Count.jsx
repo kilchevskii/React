@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useMemo } from 'react'
 import React from 'react'
-import isFive from './isFive'
+import IsFive from './isFive'
 
 const render = {
   count1: 0,
@@ -16,3 +16,4 @@ export default React.memo(function Count({ id, value }) {
       </div>
     );
   })
+
