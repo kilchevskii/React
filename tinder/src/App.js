@@ -6,6 +6,7 @@ import React, {useState, useEffect, useMemo, memo} from 'react';
 // import Effect from './task5_useEffect_'
  import MemoExample from './task7_useMemo_'
  import Ref from './task6_useRef_'
+ import {GetRequest, PostRequest} from './task8_AJAX_'
 
 
 
@@ -20,7 +21,8 @@ function App() {
     <div>
      <button className ='toggle' onClick = {() => Hide()}>Спрятать/показать</button>
     </div> */}
-    <Ref />
+    {/* <GetRequest /> */}
+    <PostRequest />
     </>
 }
 
