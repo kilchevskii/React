@@ -7,10 +7,12 @@ import React, {useState, useEffect, useMemo, memo} from 'react';
  import MemoExample from './task7_useMemo_'
  import Ref from './task6_useRef_'
  import {GetRequest, PostRequest} from './task8_AJAX_'
-
+ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
+import Card from './card/card'
 
 
 function App() {
+  // const dispatch = useDispatch()
   // let [isVisible, setVisible] = useState(true)
   // let Hide = () => {
   //   setVisible((isVisible) = !isVisible)
@@ -23,6 +25,7 @@ function App() {
     </div> */}
     {/* <GetRequest /> */}
     <PostRequest />
+
     </>
 }
 

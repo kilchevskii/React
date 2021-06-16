@@ -41,6 +41,11 @@ body {
   justify-content: space-between;
   width: 35%;
 }
+.postData {
+  background-color: #fff;
+  width: 400px;
+  height: 80px;
+}
 
 button {
   border: 1px solid #383c45;
