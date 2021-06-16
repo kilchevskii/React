@@ -1,8 +1,8 @@
-import React, {useState, useEffect, useRef, Fragment} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
 function TodoForm(props) {
     const [input, setInput] = useState('');
-
+    // создали state чтобы отслеживать состояние нашего инпута
     const inputRef = useRef(null)
 
     useEffect(() => {
@@ -38,6 +38,9 @@ function TodoForm(props) {
          className='todo-input edit' 
          onChange={handleChange} 
          ref={inputRef}
+         // форма, в которой есть тип, пхолдер, value которое хранится в state, класс созданный для хранения
+         // предыдущего значения, в onChange лежит функция, которая позволяет нам обновлять состояние нашего state
+         // inputRef, который позволит сохранить фокус на инпуте после ререндера, первый раз накладывается с загрузкой страницы благодаря useEffect
          />
          <button className='todo-button edit'>Update</button>
          </>
