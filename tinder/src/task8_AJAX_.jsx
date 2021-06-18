@@ -6,11 +6,11 @@ function GetRequest () {
   const [msg, setMsg] = useState([])
 
   useEffect(() => {
-    axios.get('http://jsonplaceholder.typicode.com/posts')
+    axios.get('https://vk.com/api/v1/l2interfaces/GigabitEthernet2')
       .then(response => {
         console.log(response);
-        setPosts(response.data)
-        setMsg(response)
+        // setPosts(response.data)
+        // setMsg(response)
       })
       .catch(error => {
         console.log(error);
@@ -95,3 +95,6 @@ function PostRequest () {
 }
 
 export {GetRequest, PostRequest}
+
+
+console.log(1);
