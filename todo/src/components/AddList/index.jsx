@@ -6,7 +6,7 @@ import Badge from '../Badge';
 
 import closeSvg from '../../assets/img/close.svg';
 
-import '../AddList';
+import './AddList.scss';
 
 const AddList = ({ colors, onAdd }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
